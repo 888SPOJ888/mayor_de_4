@@ -1,31 +1,31 @@
-number_1=ARGV[0].to_i
-number_2=ARGV[1].to_i
-number_3=ARGV[2].to_i
-number_4=ARGV[3].to_i
+summer = ARGV[0].to_i
+fall = ARGV[1].to_i
+spring = ARGV[2].to_i
+winter = ARGV[3].to_i
 
-if number_4 == 0
+if winter == 0
 
-    if number_1 > number_2 && number_1 > number_3 
-    puts number_1 
+    if summer >= fall && summer >= spring 
+    puts summer 
     
-    elsif number_2 > number_1 && number_2 > number_3 
-    puts number_2
+    elsif fall >= summer && fall >= spring 
+    puts fall
     
     else
-    puts number_3
+    puts spring
 
     
 
     end
 
 
-    elsif number_1 > number_2 && number_1 > number_3 && number_1 > number_4
-        puts number_1
-    elsif number_2 > number_1 && number_2 > number_3 && number_2 > number_4
-        puts number_2
-    elsif number_3 > number_1 && number_3 > number_2 && number_3 >  number_4
-        puts number_3
+    elsif summer >= fall && summer >= spring && summer >= winter
+        puts summer
+    elsif fall >= summer && fall >= spring && fall >= winter
+        puts fall
+    elsif spring >= summer && spring >= fall && spring >=  winter
+        puts spring
     else 
-        puts number_4
+        puts winter
 end
 
